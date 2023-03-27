@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <!--
+            div
+        -->
+        <h1>Form Registration</h1>
+        <form style="border: 1px; background-color: cadetblue; margin: 1%; padding: 1%; border-radius: 5px; width: 50%;">
+
+            <div>
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter your name" name="f_name" required/>
+            </div>
+                <br/>
+            <div>
+                <label for="email">E - mail : </label>
+                <input type="email" id="email" placeholder="abc@abcd.com" name="email"  required/>
+
+            </div>
+
+            <br/>
+            <div>
+                <label for="">password : </label>
+                <input type="password" placeholder="password" name="password" minlength="8" required/>
+
+            </div>
+            <br/>
+            <fieldset>
+                <legend>Select your cources</legend> 
+                
+                <div>
+                    <input type="checkbox" name="course" value="c" checked/>
+                    <label for="C"> C</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="course" value="java"/>
+                    <label for="C"> Java</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="course" value="python"/>
+                    <label for="C"> Python</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="course" value="react"/>
+                    <label for="C"> React</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="course" value="angular" checked/>
+                    <label for="C"> Angular</label>
+                </div>
+            </fieldset>
+
+            <br/>
+                <fieldset>
+                    <legend>    Gender Select</legend>
+                    <div>
+                        <label for="fm"> Female</label>
+                        <input type="radio" id="fm" name="gender" value="female"/>
+                        &nbsp;&nbsp;&nbsp;
+                        <label for="m">male</label>
+                        <input type="radio" id="m" name="gender" value="male"/>
+                    </div>
+                </fieldset>
+            <br/>
+
+            <div>
+                <label for="DOB">Date of Birth</label>
+                <input type="date" value="2023-03-22" min="1990-01-01" max="2040-10-01"/>
+
+                <input type="time"/>
+            </div>
+            <br/>
+            <div>
+                <label> Mobile </label>
+                <input type="number" min="2222222222" max="9999999999" required/>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Enter your address</legend>
+                 <textarea cols="30" rows="5" name="address" maxlength="500">Should more than 500</textarea>
+
+                 </textarea>
+                 </fieldset>
+                 <div>
+                    <br/><br/>
+                 <label> Distics : </label>
+    <!--
+                 <select>
+
+                    <optgroup label="South Zone">
+                       
+                    <option value="vellore">Vellore</option>
+                     <option value="vellore">Krishnagiri</option>
+                      <option value="vellore">Madura</option>
+                       <option value="vellore">Thruchi</option>
+                       </optgroup>
+                       <optgroup label="North Zone">
+                        <option value="vellore">Coimbathur</option>
+                         <option value="vellore">salem</option>
+                          <option  value="vellore">Kanchipuram</option>
+                           <option value="vellore">chennai</option>
+                           </optgroup>
+                 </select>
+                 -->
+
+                 <input type="text" list="data" placeholder="EnterDetails"/>
+                 
+                 <datalist id="data">
+                    <optgroup label="South Zone">
+                       
+                    <option value="vellore">Vellore</option>
+                     <option value="vellore">Krishnagiri</option>
+                      <option value="vellore">Madura</option>
+                       <option value="vellore">Thruchi</option>
+                       </optgroup>
+                       <optgroup label="North Zone">
+                        <option value="vellore">Coimbathur</option>
+                         <option value="vellore">salem</option>
+                          <option  value="vellore">Kanchipuram</option>
+                           <option value="vellore">chennai</option>
+                           </optgroup>
+
+                 </datalist>
+                 </div>
+                 <br/><br/>
+
+
+                 <div>
+
+                    <input type="range" min="0" max="1000" value="80" step="100"/>
+                 </div>
+                  <br/><br/>
+                 <div>
+                    <label> upload your photos</label>
+                    <input type="file" accept=".jpg,.png" />
+                 </div>
+                  <br/><br/>
+                  <div>
+                    <label> upload your documnets</label>
+                    <input type="file" accept=".pdf,.docx" multiple/>
+                 </div>
+            </div>
+
+            <details>
+                <summary>About this form registration</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolores quaerat magni? Asperiores voluptas cum, a eius quo modi, quaerat magnam deserunt nobis id quasi molestiae, harum reprehenderit neque recusandae.</p>
+            </details>
+            <details>
+                <summary>Accept Reqirements</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure fugit suscipit saepe magni unde neque tempore molestiae aliquid. Eaque sapiente accusantium dignissimos iure beatae quod quibusdam dolores consequatur perspiciatis.</p>
+            </details>
+            <details>
+                <summary>More about restriction</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, est placeat. Mollitia neque, alias modi maxime dolores iure enim nostrum asperiores, suscipit sunt quod itaque molestias nemo nisi magni autem!</p>
+            </details>
+
+
+            <input type="hidden" name="s_name" value="passing" />
+
+            <input type="button" name="" value="OnChange" onclick="alert('i am from js')" /> &nbsp;&nbsp;&nbsp;
+            <input type="submit"/> &nbsp;&nbsp;&nbsp;
+            <input type="reset"/>
+
+            <!--
+                <input type="month"/>
+            <input type="week"/>
+
+            <input type="color" value="#9beb2d"/>
+            -->
+            
+
+        </form>
+
+
+    </body>
+</html>
