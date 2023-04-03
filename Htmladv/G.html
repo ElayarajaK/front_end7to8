@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <svg width="400" height="400" style="border: 3px solid green;">
+           
+                <rect x="80" y="20" width="300" height="300" style="fill: goldenrod;"></rect>
+
+            
+        </svg>
+
+        <svg width="400" height="400" style="border: 3px solid green;">
+           
+           <line id="line" x1="30"  y1="100" y2="350" x2="100" style="fill: blue; stroke: brown; stroke-width: 5;"   />
+           <line id="line" x1="50"  y1="100" y2="350" x2="300" style="fill: blue; stroke: brown; stroke-width: 5;"   />
+           
+        
+    </svg>
+    <svg width="400" height="400" style="border: 3px solid green;">
+           
+       <circle cx="200" cy="200" r="100" style="fill: chartreuse; stroke-width: 30; ">
+
+       </circle>
+
+
+
+     
+ </svg>
+ <svg width="400" height="400" style="border: 3px solid green;">
+           
+   <text x="100" y="50" style="font-size: xx-large; font-weight: bolder ; transform: rotate(60deg);">I am a SVG text</text>
+
+   <text x="10" y="10" style="font-size: xx-large; font-weight: bolder ; transform: rotate(10deg);">I am a SVG second text</text>
+
+
+  
+</svg>
+
+<br/>
+
+<canvas id="canva" width="400" height="400" style="border: 2px solid; "></canvas>
+
+
+        <script>
+            let canvas=document.getElementById("canva");
+             let ctx =canvas.getContext("2d");
+             console.log(ctx);
+             console.log(canvas);
+            
+                 ctx.fillStyle="red";
+
+             ctx.fillRect(0,0,200,200);
+
+
+            let val=document.getElementsByTagName("line")
+
+            console.log(val);
+        </script>
+    </body>
+</html>
